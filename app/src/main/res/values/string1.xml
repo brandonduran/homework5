@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="durationStrings">
+        <item>0-30min</item>
+        <item>30m-1hr</item>
+        <item>1-3hr</item>
+        <item>3-5hr</item>
+        <item>1d+</item>
+    </string-array>
+</resources>

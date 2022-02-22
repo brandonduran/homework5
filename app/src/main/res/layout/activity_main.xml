@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:text="Grocery List Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appTitle"
+        android:background="@drawable/linearborder"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Cart Total:"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="$0"
+            android:textSize="27sp" />
+
+        <Button
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="1"
+            android:onClick="clearList"
+            android:text="Clear"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:background="@drawable/linearborder"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spending Limit:"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="5dp"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/totalTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="0"
+            android:imeOptions="actionDone"
+            android:textSize="22sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout1"
+        android:background="#80A0DEE6">
+
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/hornButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="320dp"
+        android:background="?android:selectableItemBackground"
+        android:layout_below="@id/linearLayout1"
+        android:src="@drawable/volume_off"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:onClick="disableHorn"
+        android:layout_marginTop="500dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_below="@id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:alpha="0"
+        android:src="@drawable/redx"
+        android:visibility="visible"
+        app:srcCompat="@drawable/redx" />
+
+</RelativeLayout>

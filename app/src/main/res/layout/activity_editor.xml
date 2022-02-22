@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDEDE"
+    tools:context=".EditorActivity">
+
+    <EditText
+        android:id="@+id/items"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="#03F4F4"
+        android:ems="10"
+        android:hint="Item:"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/costs"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="140dp"
+        android:background="#03F4F4"
+        android:ems="10"
+        android:hint="Cost:"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/quantities"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="220dp"
+        android:background="#03F4F4"
+        android:ems="10"
+        android:hint="Quantity:"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="345dp"
+        android:onClick="saveData"
+        android:text="Add to Cart"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
